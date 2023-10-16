@@ -134,13 +134,13 @@ public class JsonPlaceholderApiClient {
             System.out.println("Созданный пользователь: " + createdUser);
 
             // Обновление информации о пользователе
-            int userIdToUpdate = 1; // Укажите существующий ID пользователя
+            int userIdToUpdate = 1; 
             String updatedUserInfo = "{ \"name\": \"Updated Name\", \"username\": \"updatedusername\", \"email\": \"updatedemail@example.com\" }";
             String updatedUser = updateUser(updatedUserInfo, userIdToUpdate);
             System.out.println("Обновленный пользователь: " + updatedUser);
 
             // Удаление пользователя
-            int userIdToDelete = 1; // Укажите существующий ID пользователя
+            int userIdToDelete = 1; 
             int deleteStatus = deleteUser(userIdToDelete);
             System.out.println("Статус удаления: " + deleteStatus);
 
@@ -149,21 +149,21 @@ public class JsonPlaceholderApiClient {
             System.out.println("Все пользователи: " + allUsers);
 
             // Получение информации о пользователе по ID
-            int userIdToRetrieve = 1; // Укажите существующий ID пользователя
+            int userIdToRetrieve = 1; 
             String userById = getUserById(userIdToRetrieve);
             System.out.println("Пользователь по ID: " + userById);
 
             // Получение информации о пользователе по имени пользователя (username)
-            String usernameToRetrieve = "johndoe"; // Укажите существующий username
+            String usernameToRetrieve = "Samantha"; 
             String userByUsername = getUserByUsername(usernameToRetrieve);
             System.out.println("Пользователь по username: " + userByUsername);
 
             // Получение и сохранение комментариев к последнему посту пользователя
-            int userIdForComments = 1; // Укажите существующий ID пользователя
+            int userIdForComments = 1; 
             getCommentsForLastPostAndSaveToFile(userIdForComments);
 
             // Получение открытых задач для пользователя
-            int userIdForTodos = 1; // Укажите существующий ID пользователя
+            int userIdForTodos = 1; 
             String openTodos = getOpenTodosForUser(userIdForTodos);
             System.out.println("Открытые задачи для пользователя: " + openTodos);
         } catch (IOException e) {
